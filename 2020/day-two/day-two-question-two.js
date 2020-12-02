@@ -18,4 +18,4 @@ parsed.forEach(({ req, chars, pw }, index) => {
     }
 });
 
-console.log(data.length - Object.keys(invalids).length);
+console.log(data.length - Object.keys(invalids).length); // 251
