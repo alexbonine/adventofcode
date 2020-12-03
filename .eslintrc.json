@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "curly": ["warn", "all"],
+    "no-confusing-arrow": ["warn", { "allowParens": false }],
+    "no-extra-boolean-cast": "warn",
+    "no-prototype-builtins": "warn",
+    "no-unused-vars": "off",
+    "no-useless-catch": "warn",
+    "no-useless-escape": "warn",
+    "object-shorthand": "warn",
+    "operator-linebreak": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-const": "warn",
+    "prefer-template": "warn",
+    "prettier/prettier": "error",
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ]
+  }
+}
